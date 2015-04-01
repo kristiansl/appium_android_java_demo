@@ -24,7 +24,7 @@ public class real_dev {
         String sauceAccessKey = "69c9ea29-59c8-4b3a-9909-18b1b05343f6";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("Name", "Android Appium Test w Travis CI");
+        capabilities.setCapability("Name", "Android Appium Test w Travis CI 2");
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName","Samsung Galaxy S4 Device");
         capabilities.setCapability("platformVersion", "4.3");
