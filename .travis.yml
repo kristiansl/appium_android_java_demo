@@ -1,21 +1,27 @@
 language: android
-
+android:
   components:
-    - build-tools-18.1.0
+    # Uncomment the lines below if you want to
+    # use the latest revision of Android SDK Tools
+    # - platform-tools
+    # - tools
 
-before_script:
-  # Create and start emulator
-  - echo no | android create avd --force -n test -t android-16 --abi armeabi-v7a
-  - emulator -avd test -no-skin -no-audio -no-window &
-  - ./wait_for_emulator
+    # The BuildTools version used by your project
+    - build-tools-19.1.0
 
-  script: mvn install -Pintegration-tests -Dandroid.device=test
+    # The SDK version used to compile your project
+    - android-19
 
-#language: java
-#jdk:
-#- openjdk7
-#- oraclejdk7
-#- oraclejdk8
+    # Additional components
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+    - addon-google_apis-google-19
+
+    # Specify at least one system image,
+    # if you need to run emulator(s) during your tests
+    - sys-img-armeabi-v7a-android-19
+    - sys-img-x86-android-17
 env:
   global:
   - secure: U4T6MOzC8a2hz36I7rAVOIUmoQbJ7c9sHF8W3Epf9tMLUcstG7RN3Kr2LAuGsSD9Nlgr0AY60SMSqOHNXedyT43n3fW0LVDF2+/HMl5ZWWCiTreaq11PgYKEuLHmAq5RAagiLiPFfT5JOiSs5FnOTM0n6795jkwM4UvU1Ob7DKU=
