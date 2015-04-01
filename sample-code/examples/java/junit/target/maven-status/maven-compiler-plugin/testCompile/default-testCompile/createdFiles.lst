@@ -1,0 +1,5 @@
+com/saucelabs/appium/real_dev.class
+com/saucelabs/appium/page_object/android/ApiDemosListViewScreenSimple.class
+com/saucelabs/appium/page_object/ios/TestAppScreenSimple.class
+com/saucelabs/appium/page_object/android/ApiDemosListViewScreenChaided.class
+com/saucelabs/appium/page_object/android/ApiDemosListViewScreenByAllPossible.class
