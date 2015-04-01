@@ -24,9 +24,9 @@ android:
     - sys-img-x86-android-17
 
 jdk:
-	- openjdk7
-	- oraclejdk7
-	- oraclejdk8
+- openjdk7
+- oraclejdk7
+- oraclejdk8
 
 env:
   global:
