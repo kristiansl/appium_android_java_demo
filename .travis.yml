@@ -6,17 +6,7 @@ android:
 notifications:
   email: false
 
-before_install:
 
-  # for gradle output style
-  - export TERM=dumb
-
-  # environment info
-  - ./gradlew -v
-  - uname -a
-
-# Let's try to build...
-script: ./gradlew clean build
 #language: java
 #jdk:
 #- openjdk7
