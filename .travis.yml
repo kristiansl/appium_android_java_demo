@@ -1,16 +1,21 @@
 language: android
+jdk: oraclejdk7
+env:
+  matrix:
+    - ANDROID_TARGET=android-19  ANDROID_ABI=armeabi-v7a
+
 android:
   components:
-    - build-tools-22.0.1
-   # jdk1.8.0_40
+    - build-tools-19.0.0
 
 before_script:
   # Create and start emulator
-  - echo no | android create avd --force -n test -t android-16 --abi armeabi-v7a
+  - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
   - emulator -avd test -no-skin -no-audio -no-window &
-  - ./wait_for_emulator
+  - adb wait-for-device
+  - adb shell input keyevent 82 &
 
-script: mvn install -Pintegration-tests -Dandroid.device=test
+script: ./gradlew connectedInstrumentTest
 env:
   global:
   - secure: U4T6MOzC8a2hz36I7rAVOIUmoQbJ7c9sHF8W3Epf9tMLUcstG7RN3Kr2LAuGsSD9Nlgr0AY60SMSqOHNXedyT43n3fW0LVDF2+/HMl5ZWWCiTreaq11PgYKEuLHmAq5RAagiLiPFfT5JOiSs5FnOTM0n6795jkwM4UvU1Ob7DKU=
