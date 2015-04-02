@@ -1,21 +1,19 @@
 language: android
 jdk: oraclejdk7
-env:
-  matrix:
-    - ANDROID_TARGET=android-21  ANDROID_ABI=armeabi
 
 android:
   components:
-    - build-tools-21.1.2
-
-before_script:
-  # Create and start emulator
-  - echo no | android create avd --force -n test -t $ANDROID_TARGET --abi $ANDROID_ABI
-  - emulator -avd test -no-skin -no-audio -no-window &
-  - adb wait-for-device
-  - adb shell input keyevent 82 &
-
-script: ./gradlew connectedInstrumentTest
+    - build-tools-21.0.2
+script:
+ - cd Demo-Layout 
+ - echo "Entered Demo-Layout."
+ - ant clean
+ - ant
+ - cd ../Demo-Service
+ - echo "Entered Demo-Service."
+ - ant clean
+ - ant
+ 
 env:
   global:
   - secure: U4T6MOzC8a2hz36I7rAVOIUmoQbJ7c9sHF8W3Epf9tMLUcstG7RN3Kr2LAuGsSD9Nlgr0AY60SMSqOHNXedyT43n3fW0LVDF2+/HMl5ZWWCiTreaq11PgYKEuLHmAq5RAagiLiPFfT5JOiSs5FnOTM0n6795jkwM4UvU1Ob7DKU=
