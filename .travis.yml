@@ -9,7 +9,9 @@ before_script:
   # Create and start emulator
   - echo no | android create avd --force -n test -t android-19 --abi armeabi-v7a
   - emulator -avd test -no-skin -no-audio -no-window  -no-audio -gpu off &
-script: mvn -Dtest=real_dev.java test
+script: cd sample-code && examples && java && junit mvn -Dtest=real_dev.java test
+
+#/sample-code/examples/java/junit
 
 env:
   global:
