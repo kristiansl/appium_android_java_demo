@@ -1,7 +1,13 @@
 package com.saucelabs.appium;
 
-/*import io.appium.java_client.AppiumDriver;*/
+import static org.junit.Assert.assertEquals;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+
+import java.io.File;
+import java.net.URL;
+import java.util.List;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,22 +15,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import java.net.URL;
-import java.util.List;
+public class AndroidTest {
 
-public class real_dev {
-    private AndroidDriver driver;
+    private AppiumDriver driver;
 
     @Before
-    public void setUp() throws Exception {
-        /*String sauceUsername = System.getenv("SAUCE_USERNAME");
-        String sauceAccessKey = System.getenv("SAUCE_ACCESS_KEY");*/
+     public void setUp() throws Exception {
 
         String sauceUsername = "kristianmeiersl";
-        String sauceAccessKey = "69c9ea29-59c8-4b3a-9909-18b1b05343f6";
+        String sauceAccessKey = "69c9ea29-59c8-4b3a-9909-18b1b05343f6"; 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("Name", "Real Device s4");
+        capabilities.setCapability("Name", "Keeping it real");
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName","Samsung Galaxy S4 Device");
         capabilities.setCapability("platformVersion", "4.3");
@@ -48,6 +50,7 @@ public class real_dev {
         textFieldsList.get(2).sendKeys("Some@example.com");
         driver.swipe(100, 500, 100, 100, 2);
         driver.findElementByName("Save").click();
+    
     }
 
 }
