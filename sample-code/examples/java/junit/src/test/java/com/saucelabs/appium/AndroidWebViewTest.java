@@ -24,12 +24,12 @@ public class AndroidWebViewTest {
         String sauceUsername = "kristianmeiersl";
         String sauceAccessKey = "69c9ea29-59c8-4b3a-9909-18b1b05343f6"; 
         // set up appium
-        File classpathRoot = new File(System.getProperty("user.dir"));
-        File app = new File(classpathRoot, "https://s3-us-west-1.amazonaws.com/kristianmeier/selendroid-test-app.apk");
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("Name", "Android Emulator Test");
         capabilities.setCapability("deviceName","Android Emulator");
         capabilities.setCapability("automationName","Selendroid");
-        capabilities.setCapability("app", app.getAbsolutePath());
+        capabilities.setCapability("app", "https://s3-us-west-1.amazonaws.com/kristianmeier/selendroid-test-app.apk");
         capabilities.setCapability("appPackage", "io.selendroid.testapp");
         capabilities.setCapability("appActivity", ".HomeScreenActivity");
         driver = new AndroidDriver(new URL("http://"+ sauceUsername +":"+ sauceAccessKey +"@ondemand.saucelabs.com/wd/hub"), capabilities);
