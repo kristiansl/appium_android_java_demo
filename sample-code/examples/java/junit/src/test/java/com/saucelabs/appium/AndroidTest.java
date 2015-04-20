@@ -49,8 +49,8 @@ public class AndroidTest {
         List<WebElement> textFieldsList = driver.findElementsByClassName("android.widget.EditText");
         textFieldsList.get(0).sendKeys("Some Name");
         textFieldsList.get(2).sendKeys("Some@example.com");
-        /*driver.swipe(100, 500, 100, 100, 2);*/
-        driver.findElementByName("Save").click();
+        driver.swipe(100, 500, 100, 100, 2);
+        /*driver.findElementByName("Save").click();*/
     
     }
 
