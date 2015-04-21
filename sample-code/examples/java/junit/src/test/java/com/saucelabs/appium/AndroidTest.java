@@ -26,7 +26,7 @@ public class AndroidTest {
         String sauceAccessKey = "69c9ea29-59c8-4b3a-9909-18b1b05343f6"; 
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("Name", "Travis CI Android Emulator ");
+        capabilities.setCapability("Name", "Travis CI Android Emulator  ");
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName","Android Emulator");
        /* capabilities.setCapability("deviceName","Samsung Galaxy S4 Device"); */
