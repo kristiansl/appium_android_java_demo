@@ -18,7 +18,7 @@ import java.net.URL;
 
 import java.util.LinkedList;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
-
+    
 /**
  * Demonstrates how to write a JUnit test that runs tests against Sauce Labs using multiple emulators in parallel.
  * <p/>
@@ -96,7 +96,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     public static LinkedList browsersStrings() {
         LinkedList browsers = new LinkedList();
 
-        browsers.add(new String[]{"Android", "Android Emulator", "4.3", "http://saucelabs.com/example_files/ContactManager.apk", "Android Emulator"});
+        browsers.add(new String[]{"Android", "Android Emulator", "4.3", "http://saucelabs.com/example_files/ContactManager.apk", "Android Emulator "});
         browsers.add(new String[]{"Android", "Google Nexus 7 HD Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Google Nexus 7 HD Emulator"});
         browsers.add(new String[]{"Android", "Samsung Galaxy S4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 Emulator"});
         browsers.add(new String[]{"Android", "LG Nexus 4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "LG Nexus 4 Emulator"});
