@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.yourcompany.SampleSauceTest" time="175.399" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="com.yourcompany.SampleSauceTest" time="159.579" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib"/>
@@ -62,8 +62,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[1]" time="45.025"/>
-  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[0]" time="39.343"/>
-  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[3]" time="44.174"/>
-  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[2]" time="46.857"/>
+  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[3]" time="44.061"/>
+  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[0]" time="29.169"/>
+  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[2]" time="42.793"/>
+  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[1]" time="43.556"/>
 </testsuite>
