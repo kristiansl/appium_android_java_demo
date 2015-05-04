@@ -16,3 +16,7 @@ To compile and run all tests, run:
 To run a single test, run:
 
     mvn -Dtest=com.saucelabs.appium.SimpleTest test
+
+Adding the Saucelabs badges for Jenkns
+
+	[![Sauce Test Status](https://saucelabs.com/buildstatus/kristianmeiersl)](https://saucelabs.com/u/kristianmeiersl)
