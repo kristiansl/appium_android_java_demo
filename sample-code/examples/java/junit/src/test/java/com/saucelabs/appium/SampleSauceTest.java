@@ -45,7 +45,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     /**
      * Represents the platform to be used as part of the test run (i.e. Android).
      */
-    private String platformName;
+   private String platformName;
     /**
      * Represents the device name to be used as part of the test run. (i.e. Android Emulator, Google Nexus 7 HD Emulator)
      */
@@ -100,6 +100,8 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         browsers.add(new String[]{"Android", "Google Nexus 7 HD Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Google Nexus 7 HD Emulator"});
         browsers.add(new String[]{"Android", "Samsung Galaxy S4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 Emulator"});
         browsers.add(new String[]{"Android", "LG Nexus 4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "LG Nexus 4 Emulator"});
+      //browsers.add(new String[]{"Android", "Samsung Galaxy S5 Device", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S5 Device"});
+
 
         return browsers;
     }
@@ -119,7 +121,6 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         capabilities.setCapability("deviceName", deviceName);
         capabilities.setCapability("platformVersion", platformVersion);
         capabilities.setCapability("app", app);
-
         capabilities.setCapability("name", name);
         this.driver = new RemoteWebDriver(
                 new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"),
