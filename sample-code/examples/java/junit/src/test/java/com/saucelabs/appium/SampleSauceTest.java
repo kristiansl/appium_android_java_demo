@@ -86,7 +86,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         this.platformVersion = platformVersion;
         this.app = app;
         this.name = name;
-    } 
+    }
 
     /**
      * @return a LinkedList containing String arrays representing the mobile device emulator combinations the test should be run against.
