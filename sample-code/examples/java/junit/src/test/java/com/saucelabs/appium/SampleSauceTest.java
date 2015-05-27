@@ -91,7 +91,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     /**
      * @return a LinkedList containing String arrays representing the mobile device emulator combinations the test should be run against.
      * The values in the String array are used as part of the invocation of the test constructor
-     */
+     */ 
     @ConcurrentParameterized.Parameters
     public static LinkedList browsersStrings() {
         LinkedList browsers = new LinkedList();
