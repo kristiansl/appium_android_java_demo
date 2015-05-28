@@ -23,7 +23,7 @@ import com.saucelabs.common.SauceOnDemandSessionIdProvider;
  * Demonstrates how to write a JUnit test that runs tests against Sauce Labs using multiple emulators in parallel.
  * <p/>
  * The test also includes the {@link SauceOnDemandTestWatcher} which will invoke the Sauce REST API to mark
- * the test as passed or failed.
+ * the test as passed or failed. 
  *
  * @author Neil Manvar
  */
