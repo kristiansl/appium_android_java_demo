@@ -57,7 +57,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     /**
      * Location of the app
      */
-    private String app;
+    private String app; 
     private String name;
     /**
      * Instance variable which contains the Sauce Job Id.
@@ -86,7 +86,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         this.platformVersion = platformVersion;
         this.app = app;
         this.name = name;
-    }
+    } 
 
     /**
      * @return a LinkedList containing String arrays representing the mobile device emulator combinations the test should be run against.
