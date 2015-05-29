@@ -57,7 +57,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     /**
      * Location of the app
      */
-    private String app; 
+    private String app;
     private String name;
     /**
      * Instance variable which contains the Sauce Job Id.
