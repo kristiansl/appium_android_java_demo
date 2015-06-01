@@ -103,7 +103,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
       //browsers.add(new String[]{"Android", "Samsung Galaxy S5 Device", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S5 Device"});
   
         return browsers;
-    }
+    } 
 
     /**
      * Constructs a new {@link RemoteWebDriver} instance which is configured to use the capabilities defined by the {@link #browser},
