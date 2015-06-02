@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.yourcompany.SampleSauceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 290.739 sec <<< FAILURE!
-sampleTest[0](com.yourcompany.SampleSauceTest)  Time elapsed: 0.003 sec  <<< ERROR!
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 170.762 sec <<< FAILURE!
+sampleTest[4](com.yourcompany.SampleSauceTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NullPointerException
 	at com.yourcompany.SampleSauceTest.tearDown(SampleSauceTest.java:151)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
