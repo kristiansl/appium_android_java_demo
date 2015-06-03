@@ -14,7 +14,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import com.saucelabs.junit.ConcurrentParameterized;
 import com.saucelabs.junit.SauceOnDemandTestWatcher;
-import java.net.URL; 
+import java.net.URL;
 
 import java.util.LinkedList;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
