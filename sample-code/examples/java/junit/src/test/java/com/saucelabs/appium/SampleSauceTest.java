@@ -25,7 +25,7 @@ import com.saucelabs.common.SauceOnDemandSessionIdProvider;
  * The test also includes the {@link SauceOnDemandTestWatcher} which will invoke the Sauce REST API to mark
  * the test as passed or failed. 
  *
- * @author Kristian
+ * @author Kristian 
  */
 @RunWith(ConcurrentParameterized.class)
 public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
