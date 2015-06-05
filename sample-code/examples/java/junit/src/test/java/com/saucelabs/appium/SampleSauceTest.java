@@ -59,6 +59,8 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
      */
     private String app;
     private String name;
+    private String locale;
+    private String language;
     /**
      * Instance variable which contains the Sauce Job Id.
      */
@@ -79,13 +81,15 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
      * @param app
      */
 
-    public SampleSauceTest(String platformName, String deviceName, String platformVersion, String app, String name) {
+    public SampleSauceTest(String platformName, String deviceName, String platformVersion, String app, String name, String locale, String language) {
         super();
         this.platformName = platformName;
         this.deviceName = deviceName;
         this.platformVersion = platformVersion;
         this.app = app;
         this.name = name;
+        this.locale = locale;
+        this.language = language;
     }
 
     /**
@@ -96,10 +100,10 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     public static LinkedList browsersStrings() {
         LinkedList browsers = new LinkedList();
 
-        browsers.add(new String[]{"Android", "Android Emulator", "4.3", "http://saucelabs.com/example_files/ContactManager.apk", "Android Emulator-Jenkins "});
-        browsers.add(new String[]{"Android", "Google Nexus 7 HD Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Google Nexus 7 HD Emulator"});
-        browsers.add(new String[]{"Android", "Samsung Galaxy S4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 Emulator"});
-        browsers.add(new String[]{"Android", "LG Nexus 4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "LG Nexus 4 Emulator"});
+        browsers.add(new String[]{"Android", "Android Emulator", "4.3", "http://saucelabs.com/example_files/ContactManager.apk", "Android Emulator-Jenkins", "de", "de"});
+        browsers.add(new String[]{"Android", "Google Nexus 7 HD Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Google Nexus 7 HD Emulator", "de", "de"});
+        browsers.add(new String[]{"Android", "Samsung Galaxy S4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 Emulator", "de", "de"});
+        browsers.add(new String[]{"Android", "LG Nexus 4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "LG Nexus 4 Emulator", "de", "de"});
       //  browsers.add(new String[]{"Chrome", "Samsung Galaxy S4 Device", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 REAL Device"});
   
         return browsers;
@@ -121,6 +125,8 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         capabilities.setCapability("platformVersion", platformVersion);
         capabilities.setCapability("app", app);
         capabilities.setCapability("name", name);
+        capabilities.setCapability("locale", locale);
+        capabilities.setCapability("language", language);
         this.driver = new RemoteWebDriver(
                 new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"),
                 capabilities);
