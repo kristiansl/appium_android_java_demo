@@ -18,7 +18,7 @@ import java.net.URL;
 
 import java.util.LinkedList;
 import com.saucelabs.common.SauceOnDemandSessionIdProvider;
-
+ 
 /**
  * Demonstrates how to write a JUnit test that runs tests against Sauce Labs using multiple emulators in parallel.
  * <p/>
@@ -127,7 +127,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
 
         this.sessionId = (((RemoteWebDriver) driver).getSessionId()).toString();
     }
-
+ 
     /**
      * Runs a simple test that clicks the add contact button
      * @throws Exception
