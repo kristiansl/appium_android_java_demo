@@ -104,7 +104,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         browsers.add(new String[]{"Android", "Google Nexus 7 HD Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Google Nexus 7 HD Emulator", "de", "de"});
         browsers.add(new String[]{"Android", "Samsung Galaxy S4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 Emulator", "de", "de"});
         browsers.add(new String[]{"Android", "LG Nexus 4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "LG Nexus 4 Emulator", "de", "de"});
-      //  browsers.add(new String[]{"Chrome", "Samsung Galaxy S4 Device", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 REAL Device"});
+        //browsers.add(new String[]{"Android", "Samsung Galaxy S4 Device", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 REAL Device", "de", "de"});
   
         return browsers;
     } 
@@ -150,7 +150,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     /**
      * Closes the {@link WebDriver} session.
      *
-     * @throws Exception
+     * @throws Exception 
      */
     @After
     public void tearDown() throws Exception {
