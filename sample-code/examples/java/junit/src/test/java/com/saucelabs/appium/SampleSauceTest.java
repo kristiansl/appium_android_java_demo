@@ -137,7 +137,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
 
         this.sessionId = (((RemoteWebDriver) driver).getSessionId()).toString();
     }
- 
+  
     /**
      * Runs a simple test that clicks the add contact button
      * @throws Exception
