@@ -61,6 +61,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     private String name;
     private String locale;
     private String language;
+    //private String browserName;
     /**
      * Instance variable which contains the Sauce Job Id.
      */
@@ -82,6 +83,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
      */
 
     public SampleSauceTest(String platformName, String deviceName, String platformVersion, String app, String name, String locale, String language) {
+    //public SampleSauceTest(String platformName, String deviceName, String platformVersion, String app, String name, String browserName) {
         super();
         this.platformName = platformName;
         this.deviceName = deviceName;
@@ -90,6 +92,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         this.name = name;
         this.locale = locale;
         this.language = language;
+      //this.browserName = browserName;
     }
 
     /**
@@ -104,7 +107,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         browsers.add(new String[]{"Android", "Google Nexus 7 HD Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Google Nexus 7 HD Emulator", "de", "de"});
         browsers.add(new String[]{"Android", "Samsung Galaxy S4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 Emulator", "de", "de"});
         browsers.add(new String[]{"Android", "LG Nexus 4 Emulator", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "LG Nexus 4 Emulator", "de", "de"});
-        //browsers.add(new String[]{"Android", "Samsung Galaxy S4 Device", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 REAL Device", "de", "de"});
+        //browsers.add(new String[]{"Android", "Samsung Galaxy S4 Device", "4.4", "http://saucelabs.com/example_files/ContactManager.apk", "Samsung Galaxy S4 REAL Device", "Chrome"});
   
         return browsers;
     } 
@@ -127,6 +130,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         capabilities.setCapability("name", name);
         capabilities.setCapability("locale", locale);
         capabilities.setCapability("language", language);
+        //capabilities.setCapability("browserName", browserName);
         this.driver = new RemoteWebDriver(
                 new URL("http://" + authentication.getUsername() + ":" + authentication.getAccessKey() + "@ondemand.saucelabs.com:80/wd/hub"),
                 capabilities);
