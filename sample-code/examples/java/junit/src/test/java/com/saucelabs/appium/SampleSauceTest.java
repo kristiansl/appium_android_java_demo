@@ -159,7 +159,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     @After
     public void tearDown() throws Exception {
         driver.quit();
-    }
+    } 
 
     /**
      *
