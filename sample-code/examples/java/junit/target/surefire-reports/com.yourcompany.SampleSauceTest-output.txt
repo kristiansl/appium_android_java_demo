@@ -1,4 +1,4 @@
-SauceOnDemandSessionID=0f25e6c8cc2e49d2a54c89daf82cae07 job-name=com.yourcompany.SampleSauceTest.sampleTest[0]
-SauceOnDemandSessionID=52e10f015e594d6ba0048c688cae7c6a job-name=com.yourcompany.SampleSauceTest.sampleTest[2]
-SauceOnDemandSessionID=3420456485e847af9c7649bbce62761d job-name=com.yourcompany.SampleSauceTest.sampleTest[1]
-SauceOnDemandSessionID=8899856cd84d4b1db987aa1041269cfc job-name=com.yourcompany.SampleSauceTest.sampleTest[3]
+SauceOnDemandSessionID=f419687e4dca497e973608da101623f8 job-name=com.yourcompany.SampleSauceTest.sampleTest[1]
+SauceOnDemandSessionID=1da54f5a7ba9430b9ac520710a04ee3a job-name=com.yourcompany.SampleSauceTest.sampleTest[2]
+SauceOnDemandSessionID=ece7371aed544fd1bd6ae697dd47b53c job-name=com.yourcompany.SampleSauceTest.sampleTest[0]
+SauceOnDemandSessionID=bc40dee4ca36442aac6c6bf55071f2fa job-name=com.yourcompany.SampleSauceTest.sampleTest[3]
