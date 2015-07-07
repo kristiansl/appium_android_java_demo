@@ -152,7 +152,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         el.click();
   
 
-        // TODO: verify add contact click worked
+        // TODO: verify add contact click worked 
     }
 
     /**
