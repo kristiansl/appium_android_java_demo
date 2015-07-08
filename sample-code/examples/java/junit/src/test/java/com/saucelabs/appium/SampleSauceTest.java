@@ -164,7 +164,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     public void tearDown() throws Exception {
         driver.quit();
     } 
-
+ 
     /**
      *
      * @return the value of the Sauce Job id.
