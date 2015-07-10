@@ -153,7 +153,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
    
 
         // TODO: verify add contact click worked 
-    }
+    } 
 
     /**
      * Closes the {@link WebDriver} session.
