@@ -150,7 +150,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
     public void sampleTest() throws Exception {
         WebElement el = driver.findElement(By.name("Add Contact"));
         el.click();
-   
+    
 
         // TODO: verify add contact click worked 
     } 
