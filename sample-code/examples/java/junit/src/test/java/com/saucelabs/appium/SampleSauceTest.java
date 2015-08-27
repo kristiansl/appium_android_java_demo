@@ -151,7 +151,7 @@ public class SampleSauceTest implements SauceOnDemandSessionIdProvider {
         WebElement el = driver.findElement(By.name("Add Contact"));
         el.click();
        
-
+ 
         // TODO: verify add contact click worked 
     } 
 
