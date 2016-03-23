@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="4" failures="0" name="com.yourcompany.SampleSauceTest" time="158.389" errors="0" skipped="0">
+<testsuite tests="4" failures="0" name="com.yourcompany.SampleSauceTest" time="162.965" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib"/>
     <property name="java.vm.version" value="25.45-b02"/>
     <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/Users/kristianmeier/Desktop/Dev/appium_android_java_demo/sample-code/examples/java/junit"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/kristianmeier/Desktop/dev/appium_android_java_demo/sample-code/examples/java/junit"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -32,7 +32,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.10.4"/>
+    <property name="os.version" value="10.10.5"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="user.home" value="/Users/kristianmeier"/>
     <property name="user.timezone" value="America/Los_Angeles"/>
@@ -62,8 +62,8 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[3]" time="45.955"/>
-  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[1]" time="39.781"/>
-  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[2]" time="43.814"/>
-  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[0]" time="28.839"/>
+  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[2]" time="46.528"/>
+  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[1]" time="42.629"/>
+  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[0]" time="31.865"/>
+  <testcase classname="com.yourcompany.SampleSauceTest" name="sampleTest[3]" time="41.943"/>
 </testsuite>
